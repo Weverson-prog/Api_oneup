@@ -13,7 +13,7 @@ setTimeout(function(){
 ReactDOM.render(
   <React.StrictMode>
     <div style={{backgroundImage: `url(${background})`,backgroundPosition: 'center',
-        backgroundSize: 'cover',
+        backgroundSize: '100%',
         backgroundRepeat: 'no-repeat',
         width: '100vw',
         height: '100vh' }}> 
