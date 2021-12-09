@@ -2,7 +2,6 @@ import React from 'react'
 
 import ReactDOM from 'react-dom';
 
-import background from "./images/1.jpg";
 import App from './App'
 
 
@@ -12,11 +11,7 @@ setTimeout(function(){
 
 ReactDOM.render(
   <React.StrictMode>
-    <div style={{backgroundImage: `url(${background})`,backgroundPosition: 'center',
-        backgroundSize: '100%',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '100vh' }}> 
+    <div> 
     <App />
     </div>
   </React.StrictMode>,

@@ -21,8 +21,8 @@ class Costura extends Component{
     if (list?.length > 1) {
       list.length = 1;
     }
-    if (prd?.length > 5) {
-      prd.length = 5;
+    if (prd?.length > 3) {
+      prd.length = 3;
     }
     
     if (list?.length > 0){
@@ -30,13 +30,17 @@ class Costura extends Component{
         <center>
         <div>
           
-          {list?.map(({fase, produto,qtde}) => (
+          {list?.map(({fase, produto,qtde, cod_produto}) => (
             <ul key={fase}>
-              <h1 style={{borderStyle: 'solid' ,fontSize: '50px' ,marginTop: '15px', width: 'fit-content', color: 'Black', backgroundColor: '#15CDFC'}}><h1>Operação</h1>FASE : {fase}</h1>            
-              <ul style={{borderStyle: 'solid' ,fontSize: '40px' , marginTop: '15px', width: 'fit-content', color: 'Black', backgroundColor: '#15CDFC'}}>PRODUTO : {produto}</ul>
-              <b><ul style={{borderStyle: 'solid' ,fontSize: '30px' ,marginTop: '15px', width: 'fit-content', color: 'Black', backgroundColor: '#15CDFC'}}>QUANTIDADE: {qtde}</ul></b>
+              <h1 style={{borderStyle: 'solid' ,fontSize: '50px' ,marginTop: '15px', width: '900px',color: 'Black'}}>FASE : {fase}</h1>            
+              <ul style={{borderStyle: 'solid', fontSize: '40px' , marginTop: '15px', width: '900px', height : '180px', color: 'Black'}}><u>PRODUTO : </u><br/>{produto}<br/>{cod_produto}</ul>
+              <b><ul style={{borderStyle: 'solid' ,fontSize: '30px' , width: '400px', color: 'Black'}}>QUANTIDADE: {qtde}</ul></b>
+              <ul style={{fontSize: '30px', marginTop: '15px',}}>Proximos Produtos:<br/> </ul>
               <h3 style={{borderStyle: 'solid' ,marginTop: '15px', width: 'fit-content', color: 'Black', backgroundColor: '#15CDFC'}}> {prd?.map(({produto}) => (
-              <ul>Proximos Produtos: {produto}</ul>
+              
+              <ul> {produto}</ul>
+             
+              
               ))} </h3>
             </ul> 
             
