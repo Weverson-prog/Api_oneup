@@ -21,6 +21,7 @@ class Costura extends Component{
     if (list?.length > 1) {
       list.length = 1;
     }
+    prd?.shift()
     if (prd?.length > 3) {
       prd.length = 3;
     }
@@ -34,8 +35,8 @@ class Costura extends Component{
           
           {list?.map(({fase, produto,qtde, cod_produto}) => (
             <ul key={fase}>
-              <h1 style={{borderStyle: 'solid' ,fontSize: '80px' ,marginTop: '15px', width: '1200px',height : '100px',color: 'Black'}}>FASE : {fase}</h1>            
-              <ul style={{borderStyle: 'solid', fontSize: '80px' , marginTop: '15px', width: '1200px', height : '300px', color: 'Black'}}><u>PRODUTO : </u><br/>{produto}<br/>{cod_produto}</ul>
+              <h1 style={{borderStyle: 'solid' ,fontSize: '60px' ,marginTop: '15px', width: '1200px',height : '100px',color: 'Black'}}>FASE : {fase}</h1>            
+              <ul style={{borderStyle: 'solid', fontSize: '65px' , marginTop: '15px', width: '1200px', height : '300px', color: 'Black'}}><u>PRODUTO : </u><br/>{produto}<br/>{cod_produto}</ul>
               <b><ul style={{borderStyle: 'solid' ,fontSize: '50px' , width: '500px', color: 'Black'}}>QUANTIDADE: {qtde}</ul></b>
               <b><ul style={{fontSize: '30px', marginTop: '35px',}}>Proximos Produtos:<br/> </ul></b>
               <table style={{ marginTop: '25px',}}>
