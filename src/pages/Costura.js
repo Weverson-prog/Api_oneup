@@ -21,6 +21,7 @@ class Costura extends Component{
     if (list?.length > 1) {
       list.length = 1;
     }
+    prd?.shift()
     if (prd?.length > 3) {
       prd.length = 3;
     }
