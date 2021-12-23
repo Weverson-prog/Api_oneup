@@ -25,8 +25,8 @@ class RevisaoA extends Component{
       list.length = 1;
     }
     prd?.shift()
-    if (prd?.length > 3) {
-      prd.length = 3;
+    if (prd?.length > 15) {
+      prd.length = 15;
     }
    
     if (list?.length > 0){
